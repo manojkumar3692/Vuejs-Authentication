@@ -1,6 +1,6 @@
 # lb2
 
-> Vuejs 2 Authentication & Role Based Authorization for your Vue.js ( Vue 2 )
+> Vuejs 2 Authentication & Role Based Authorization for your Vue.js ( Vue.js 2 )
 
 
 ## Build Setup
