@@ -1,6 +1,6 @@
 # lb2
 
-> Vuejs 2 Authentication & Role Based Authorization for your Vue.js ( Vue.js 2 )
+> Vuejs 2 Authentication & Role Based Authorization for your Vue.js ( Vue 2 )
 
 
 ## Build Setup
@@ -12,6 +12,7 @@ npm install
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build 
+#Description
+> A small Demo app to show how to perform authentication using Vue2 , Role Based Authentication is also included 
+
 
