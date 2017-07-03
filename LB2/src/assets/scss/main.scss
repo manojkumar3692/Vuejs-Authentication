@@ -1,0 +1,27 @@
+@import './attribute.scss';
+@import './utility.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 75px;
+    background-color: $primary-color;
+    line-height: 75px;
+    padding: 0rem 1rem;
+    h1 {
+        font-weight: 300;
+    }
+    h2 {
+        text-align: right;
+        font-size: 12px; 
+        // font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+

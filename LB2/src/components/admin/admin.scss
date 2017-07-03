@@ -1,0 +1,15 @@
+.admin {
+    padding: 2rem 2rem;
+    
+    h1 {
+        color: purple;
+        padding: 1rem 0rem;
+    }
+    
+    &__container {
+        p {
+            font-size: 32px;
+            color: purple;
+        }
+    }
+}
