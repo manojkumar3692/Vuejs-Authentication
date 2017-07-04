@@ -1,7 +1,7 @@
 <template>
 <section class="header row">
 <div class="col-lg-6 col-md-6">
-  <h1>Vuejs 2 Authentication</h1>
+  <h1>Vue 2 Authentication </h1>
 </div>
 <div class="col-lg-6 col-md-6">
   <h2 v-on:click="logout()" style="cursor:pointer;">Logout</h2>
