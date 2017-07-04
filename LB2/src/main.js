@@ -7,6 +7,7 @@ import header from './components/header.vue'
 import footer from './components/footer.vue'
 import BootstrapVue from 'bootstrap-vue'
 import login from './components/login/login.vue'
+import {store} from  './components/store';
 
 Vue.component('app-header',header);
 Vue.component('app-footer',footer);
@@ -18,6 +19,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
+    store,
     router,
     template: '<App/>',
     components: { App },

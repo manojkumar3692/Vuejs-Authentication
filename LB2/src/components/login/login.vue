@@ -25,12 +25,15 @@ export default {
                 if(res.status === "success") {
                     authUser.data = res.data;
                     authUser.token = res.token;
+                    app.$store.state.isLoggedIn = true
                     window.localStorage.setItem('lbUser',JSON.stringify(authUser));
                     if(authUser.data.role_id === 'ADMIN') {
                      app.$router.push('/admin');
                     }else {
                       app.$router.push('/resident');
                     }
+                }else {
+                      app.$store.state.isLoggedIn = false;
                 }
             })
             .catch(function (err){
