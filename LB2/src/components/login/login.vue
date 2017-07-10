@@ -1,8 +1,6 @@
 
 
 <script>
-// import axios from 'axios';
-// import {APIENDPOINT} from  '../../http-common.js';
 import loginService from './loginService.js';
 export default {
     template:require('./login.html'),
@@ -12,8 +10,6 @@ export default {
                 residentID : '',
                 password : ''
             },
-            
-            
         }
     },
     methods: {
@@ -39,14 +35,23 @@ export default {
             .catch(function (err){
                 console.log(err.data)
             })
+        },
+        loginAuth:function () {
+             var app = this;
+            const status =  JSON.parse(window.localStorage.getItem('lbUser'));
+            if(status === null || status === undefined) {
+                 app.$router.push('/login');
+            }else if (status.data.role_id === 'ADMIN') {
+               app.$router.push('/admin');
+            }else {
+               app.$router.push('/resident');
+            }
         }
+    },
+    created:function() {
+        this.loginAuth();
     }
 }
-
-
-
-
-
 </script>
 
 <style lang="scss">
